@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIAMAT - Dialéctica y Marxismo</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-neutral-900">
+  <!-- Portada / Hero -->
+  <header class="relative h-[60vh] flex items-center justify-center">
+    <img src="https://paralavoz.com/wp-content/uploads/2024/04/Cartel-sovietico.webp" alt="Portada DIAMAT" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+    <div class="relative z-10 text-center">
+      <h1 class="text-5xl font-bold tracking-tight drop-shadow">DIAMAT</h1>
+      <p class="mt-4 text-xl">Dialéctica Materialista y Marxismo</p>
+    </div>
+  </header>
+
+  <!-- Listado de artículos -->
+  <main class="max-w-4xl mx-auto p-6">
+    <h2 class="text-3xl font-bold mb-8">Artículos recientes</h2>
+
+    <div class="grid gap-8 md:grid-cols-2">
+      <!-- Tarjeta 1 -->
+      <a href="articulos/dialectica-materialista.html" class="block p-6 rounded-xl bg-neutral-100 hover:bg-neutral-50 transition shadow">
+        <h3 class="text-xl font-semibold mb-2">¿Qué es la Dialéctica Materialista?</h3>
+        <p class="text-sm text-neutral-600">Introducción breve a las leyes fundamentales de la dialéctica.</p>
+      </a>
+      <!-- Tarjeta 2 -->
+      <a href="articulos/praxis-revolucion.html" class="block p-6 rounded-xl bg-neutral-100 hover:bg-neutral-50 transition shadow">
+        <h3 class="text-xl font-semibold mb-2">Praxis y Revolución</h3>
+        <p class="text-sm text-neutral-600">Sobre la unidad de teoría y práctica en Marx.</p>
+      </a>
+      <!-- Agrega más tarjetas enlazando a tus subpáginas -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 text-sm text-neutral-500">
+    &copy; <span id="yearSpan"></span> DIAMAT
+  </footer>
+
+<script>
+  // Año dinámico
+  document.getElementById('yearSpan').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
